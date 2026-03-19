@@ -43,7 +43,6 @@ func main() {
 	http.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("ok"))
 	})
-
-	fmt.Println("listening on :3000")
+	fmt.Println("I'm listening on :3000")
 	http.ListenAndServe(":3000", nil)
 }
